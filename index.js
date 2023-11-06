@@ -35,11 +35,6 @@ async function handleText(url, isFirst) {
       content.push(`\t${$(ele).text().trim()}`);
     });
 
-  // content.push("\f");
-  // $("p").each((idx, ele) => {
-  //   content.push($(ele).text());
-  // });
-
   content = content.join("\n");
   content = `${content}\n\n\f`
   return { title: bookName, chapterName, content, nextChapterLink };
